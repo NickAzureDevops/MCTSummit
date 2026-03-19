@@ -2,20 +2,20 @@
 
 Gamified learning for **Microsoft Foundry** and **GitHub Actions**.
 
-Companion app for the session: *Agentic DevOps: The Future of Automation*.
-
 Built with **FastAPI**, **Streamlit**, **Speckit**, **GitHub SDK (PyGithub)**, and **Python**.
 
 ## Quick Start
 
-```bash
-pip install ".[dev]"
+pip install streamlit
 
-# Terminal 1 — API
+# Start FastAPI server
 uvicorn src.app:app --reload
 
-# Terminal 2 — UI
+# Start Streamlit frontend
 streamlit run ui.py
+
+# Visit interactive docs
+open http://localhost:8000/docs
 ```
 
 ## Test
